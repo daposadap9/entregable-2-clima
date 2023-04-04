@@ -13,8 +13,8 @@ const Weather = ({weather, temp}) => {
         <h2 className='text-center mb-4 font-bold text-2xl tracking-wider'>{weather?.name},{weather.sys.country}</h2>
         <section className='grid gap-4 sm:grid-cols-two'>
 
-            <article className='bg-slate-300/70 rounded-3xl grid grid-cols-2 py-2 sm:px-2'>
-                <h3 className='capitalize col-start-1-col-end-3'>{weather.weather[0].description}</h3>
+            <article className='bg-slate-300/70 rounded-3xl grid grid-cols-2 py-2 sm:px-2 justify-items-center justify-center'>
+                <h3 className='capitalize col-start-1 col-end-3'>{weather.weather[0].description}</h3>
                     <h2 className='text-[45px] font-light sm:text-6xl'>{isCelsius ? `${temp.celsius} °C`:`${temp.fahrenheit} °F`}</h2>
                     <div>
                         <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt="" />
